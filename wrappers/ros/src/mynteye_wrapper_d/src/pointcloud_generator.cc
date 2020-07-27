@@ -89,7 +89,7 @@ void PointCloudGenerator::Run() {
     msg.header.stamp = stamp_;
     msg.width = depth_.cols;
     msg.height = depth_.rows;
-    msg.is_dense = true;
+    msg.is_dense = false;
 
     sensor_msgs::PointCloud2Modifier modifier(msg);
 
